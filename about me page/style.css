@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+
+:root{
+    --primary:#17252a;
+    --secondary:#3aafa9;
+    --extra:rgb(255, 166, 0);
+    --text:rgb(223, 249, 253);
+ --background-image:url(/images/bg-intro-desktop.png) ;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+
+body,html{
+    background-color: var(--secondary);
+    color: white;
+    background-image:url(/images/bg-intro-desktop.png) ;
+    line-height: 1.6;
+    font-family: 'Comfortaa', cursive;
+
+    width: 100%;
+    height: 100vh;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+   max-width: 100% ;
+}
+/* NAV */
+.text-logo {
+    font-family: 'Open Sans', sans-serif;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+nav{
+    background-image: var(--background-image);
+
+}
+.nav-container.flex{
+    justify-content: space-between;
+}
+.nav-links .links a{
+    text-decoration: underline 2px ;
+    
+text-underline-offset: 5px;
+    color: white;
+    padding-left: 20px;
+}
+#active{
+    font-weight:bolder;
+    color: var(--primary);
+}
+.nav-links .links a:hover{
+    color: var(--primary);
+    font-size: larger;
+}
+
+/* about */
+.about {
+background-image: var(--background-image);
+padding-top: 30px;
+
+}
+
+.about-text h1{
+font-weight: 600;
+font-size: 2em;
+}
+.about-text h1 sub{
+    font-size: 20px;
+    font-variant: small-caps;
+    font-style: italic;
+    color: var(--extra);
+
+}
+.about-text{
+    line-height: 1.7;
+}
+.mypic{
+align-self: flex-end;
+position: relative;
+bottom: -8px;
+}
+
+/* HOBBIES */
+.skills-container.flex{
+justify-content: space-between;
+}
+.hobbies,.priorities,.skills{
+    padding-bottom: 20px;
+    transition: all 1s;
+}
+.hobbies h3,.priorities h3, .skills h3{
+    color: var(--extra);
+    padding-bottom: 20px;
+
+}
+
+.hobbies li,.priorities li, .skills li{
+    border-right: solid var(--extra);
+    padding: 0 10px;
+}
+
+.hobbies .flex,.priorities .flex,.skills .flex{
+justify-content: flex-start;
+
+}
+
+#contact-btn{
+    margin: 0 auto;
+    background-color: var(--secondary);
+    border: 0 solid;
+    color: var(--text);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to right bottom,var(--primary) 10%,var(--secondary));
+    box-shadow: 1px 3px 7px var(--secondary);
+    transition: border 1s ease-out;
+font-size: larger;
+
+}
+
+#contact-btn:hover{
+ border: 30px solid rgba(255, 166, 0, 0.384);
+ color: var(--extra);
+}
+
+
+/*/// CONTACT PAGE ////*/
+
+
+.container h1{
+padding-bottom: 20px ;
+color: var(--extra);
+text-decoration: underline;
+text-underline-offset: 5px;
+}
+
+.contact-container{
+padding: 0 40px;
+gap: 50px;
+}
+/* CONTACT-FORM */
+ .contact-form{
+   
+    background-color: #3aafa93a;
+    border-radius: 20px;
+    padding: 20px 20px;
+     display: flex;
+     flex-direction: column;
+     text-align: start;
+ }
+
+ .contact-form label{
+     padding: 5px;
+     color: var(--extra);
+ }
+ .contact-form ::placeholder{
+     color: var(--text);
+ }
+
+ .contact-form :focus{
+    outline: none !important;
+    border: 2px solid rgb(0, 255, 191);
+  
+ }
+.contact-input{
+    width: 100%;
+    background-color:#3aafa93a ;
+    padding: 7px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--extra); 
+}
+.contact-form button{
+    background-color:var(--extra) ;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--extra); 
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* CONTACT TEXT */
+.contact-text.flex{
+    flex-direction: column;
+   align-items: flex-start;
+   gap: 30px;
+}
+ .contact-text{
+    text-align: left;
+    font-size: 1.5em;
+ }
+ .contact-text p{
+     font-size:1rem ;
+     font-weight: 300;
+ }
+
+ .contact-icons a{
+     padding-right: 10px;
+     color: var(--extra);
+ }
+
+/* REGISTRATION */
+.reg-container{
+    padding: 0 40px;
+    gap: 50px;
+    }
+.reg-form{
+   
+    background-color: #3aafa93a;
+    border-radius: 20px;
+    padding: 20px 20px;
+     display: flex;
+     flex-direction: column;
+  
+     text-align: start;
+ }
+
+ .grp1.grid{
+gap: 20px;
+ }
+ .reg-input{
+     
+     width: 100%;
+     background-color:#3aafa93a ;
+     padding: 7px;
+     border-radius: 8px;
+     border: 2px solid var(--extra); 
+ }
+ .reg-form label{
+  display: block;
+     padding: 5px;
+     color: var(--extra);
+ }
+ .reg-form ::placeholder{
+     color: var(--text);
+ }
+
+ .reg-form :focus{
+    outline: none !important;
+    border: 2px solid rgb(0, 255, 191);
+  
+ }
+.reg-form button{
+    background-color:var(--extra) ;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--extra); 
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#gender{
+    color: var(--text);
+}
+#gender option{
+    color: var(--text);
+    background-color: var(--primary);
+}
+/* REG-TEXT */
+.reg-text.flex{
+    flex-direction: column;
+
+   gap: 20px;
+}
+ .reg-text{
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ .reg-text p{
+     font-size:1rem ;
+     font-weight: 300;
+ }
+.reg-img i{
+   
+    font-size:100px;
+}
+
+/* LOG IN */
+.login-img{
+    font-size: 100px;
+   color: var(--extra);
+   /* margin-bottom: ; */
+   
+}
+.login-form{
+    margin: 0 auto;
+   width: 500px;
+    background-color: #3aafa93a;
+    border-radius: 20px;
+    padding: 30px 30px;
+     display: flex;
+     flex-direction: column;
+     text-align: start;
+
+ }
+
+ .login-form label{
+     padding: 15px;
+     color: var(--extra);
+     cursor: pointer;
+ }
+ .login-form ::placeholder{
+     color: var(--text);
+ }
+
+ .login-form :focus{
+    outline: none !important;
+    border: 2px solid rgb(0, 255, 191);
+  
+ }
+.login-input{
+    width: 100%;
+    background-color:#3aafa93a ;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--extra); 
+}
+.login-form button{
+    background-color:var(--extra) ;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid var(--extra); 
+    color: var(--primary);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+footer{
+    color: var(--primary);
+    font-weight: 600;
+}
+footer.flex{
+    justify-content: center;
+}
+.social-icons a{
+    color: var(--primary);
+    padding-left: 15px;
+}
+
+.hamburger{
+    display: none;
+}
+.ham-menu{
+    display: none;
+}
+@media (max-width:700px) {
+   .nav-container .nav-links{
+        display: none;
+    }
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: none;
+    border: none;
+    z-index: 10;
+    transition: all 0.25s;
+
+    /* display: none; */
+
+}
+
+ .top,
+ .middle,
+ .bottom{
+    /* border-bottom: solid 3px var(--primary); */
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 3px;
+  background: var(--primary);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+ .middle{
+  transform: translateY(7px);
+
+}
+
+ .bottom{
+    transform: translateY(14px);
+
+}
+
+.open .middle{
+    display: none;
+}
+
+.open .top{
+    transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+.open .bottom{
+    transform: rotate(-45deg) translateX(-6px) translateY(6px);
+}
+
+.ham-menu{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    background:var(--primary) url(/images/bg-intro-desktop.png);
+    transition: all 0.5s;
+}
+
+
+.ham-menu .links a{
+    text-decoration: none;
+}
+.ham-menu .links {
+    text-decoration:none;
+    border-bottom: 3px solid var(--extra);
+   width: 100%;
+   padding: 20px 0;
+
+}
+.nav-links .links a:hover{
+    color: var(--extra);
+}
+
+#active{
+    color: var(--extra);
+}
+
+.hidden{
+    transform: translateX(100%);
+}
+
+}

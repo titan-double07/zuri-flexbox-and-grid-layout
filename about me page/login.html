@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <script src="https://kit.fontawesome.com/f94f1e2561.js" crossorigin="anonymous"></script>
+
+    <title>log in </title>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="bg-secondary py-md ">
+            <div class="nav-container flex px-md">
+                <div class="text-logo">
+                    <h1><span>Front</span>end Web Dev</h1>
+                </div>
+                <ul class="nav-links flex ">
+
+                    <li class=" links "><a href="index.html">About Me</a></li>
+                    <li class="links"><a  href="/contact.html">Contact</a></li>
+                    <li class="links"><a href="/registration.html">Registration</a> </li>
+                    <li class="links"><a id="active" href="/login.html">Login</a></li>
+                </ul>
+
+                <button class="hamburger">
+
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+
+                </button>
+            </div>
+
+        </nav>
+
+        <div class="ham-menu">
+            <ul class="nav-links flex.col ">
+
+                <li class=" links "><a href="index.html">About Me</a></li>
+                <li class="links"><a  href="/contact.html">Contact</a></li>
+                <li class="links"><a href="/registration.html">Registration</a> </li>
+                <li class="links"><a id="active" href="/login.html">Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container text-center bg-primary py-md">
+        <h1>LOG IN !</h1>
+
+        <div class="login-container">
+
+            <form action="submit" class="login-form"> 
+               <div class="login-img text-center"><i class="fa-solid fa-users-rectangle"></i></div>
+                
+                <input type="email" placeholder="Email address..." class="login-input">
+
+                <input type="password" placeholder="Password..." class="login-input">
+
+                <div class="checkbox flex">
+                    <div>
+                        <input type="checkbox" name="remember me" id="check" >
+                        <label for="remember-me"> Remember me</label>
+                    </div>
+
+                    <label for="forgot-password">Forgot password ?</label>
+                </div>
+                
+                <button class="btn" type="submit">Sign In.</button>
+
+            </form>
+
+
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer class="flex py-md">
+        <P>&copy; by Chisom Okereke</P>
+        <div class="social-icons px-md ">
+            <a href="https://github.com/titanwarlord007"><i class="fa-brands fa-github fa-xl "></i> Github</a>
+            <a href="https://www.linkedin.com/in/chisom-okereke-39324323a/"><i class="fa-brands fa-linkedin fa-xl"></i>
+                LinkedIn</a>
+            <a href="chisomwebdev@outlook.com"><i class="fa-solid fa-envelope fa-xl"></i> Email</a>
+            <a href="https://www.facebook.com/profile.php?id=100080410719858"><i
+                    class="fa-brands fa-facebook fa-xl"></i> Facebook</a>
+        </div>
+    </footer>
+
+
+    <script src="/index.js"></script>
+
+</body>
