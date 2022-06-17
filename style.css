@@ -29,10 +29,51 @@ h1{
 p{
   color: hsla(0, 0%, 100%, 0.75) ; 
 }
+nav ul li {
+    list-style: none;
+margin: 0 10px;
+
+}
+
+nav{
+    /* background-color: gray; */
+    border-bottom: 3px solid var(--third);
+    font-size: 20px;
+
+}
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: var(--third);
+    text-transform: uppercase;
+border-left: 3px solid var(--third);
+border-right: 3px solid var(--third);
+}
+nav a:hover{
+    color: var(--first);
+    border-left: 3px solid var(--first);
+border-right: 3px solid var(--first);
+}
+.head-text h1{
+    color: var(--third);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#active{
+    background-color: var(--second);
+    color: white;
+}
+#active:hover{
+    color: var(--first);
+}
 
 .container{
     display: flex;
-width: 50%;
+width: 1000px;
 justify-content: center;
 
 
