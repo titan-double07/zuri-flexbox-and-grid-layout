@@ -39,6 +39,7 @@ nav{
     /* background-color: gray; */
     border-bottom: 3px solid var(--third);
     font-size: 20px;
+    padding: 5px 10px;
 
 }
 nav a{
